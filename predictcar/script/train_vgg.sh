@@ -1,0 +1,15 @@
+python3 ../train_image_classifier.py \
+--train_dir=../log/train/vgg16 \
+--dataset_name=car \
+--dataset_split_name=train \
+--dataset_dir=../datarecord \
+--model_name=vgg_16 \
+--max_number_of_steps=100000 \
+--batch_size=32 \
+--learning_rate=0.01 \
+--learning_rate_decay_type=exponential \
+--save_interval_secs=300 \
+--save_summaries_secs=300 \
+--log_every_n_steps=100 \
+--optimizer=rmsprop \
+--weight_decay=0.00004
